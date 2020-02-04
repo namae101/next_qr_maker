@@ -24,16 +24,14 @@ const Action = styled.a`
 `;
 
 const Navbar: React.FunctionComponent = (): JSX.Element => (
-  <header>
-    <NavContainer>
-      <TitleContainer>
-        <TitleSpan>QR Maker</TitleSpan>
-      </TitleContainer>
-      <ActionContainer>
-        <Action href="#">About</Action>
-      </ActionContainer>
-    </NavContainer>
-  </header>
+  <NavContainer>
+    <TitleContainer>
+      <TitleSpan>QR Maker</TitleSpan>
+    </TitleContainer>
+    <ActionContainer>
+      <Action href="#">About</Action>
+    </ActionContainer>
+  </NavContainer>
 );
 
 export default Navbar;

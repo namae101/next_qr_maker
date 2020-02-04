@@ -43,7 +43,9 @@
     "@storybook/addons": "^5.3.10",
     "@storybook/react": "^5.3.10",
     "@types/enzyme": "^3.10.4",
+    "@types/qrcode.react": "^1.0.0",
     "next": "^9.2.1",
+    "qrcode.react": "^1.0.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "tailwindcss": "^1.1.4"
