@@ -1,14 +1,12 @@
 import { NextPage } from 'next';
-import { PageLayout, Button } from '../components';
+import { PageLayout, Button, FormField } from '../components';
 import { useState } from 'react';
 import QRCode from 'qrcode.react';
 import styled from '@emotion/styled';
 import tw from 'tailwind.macro';
-import FormField from '../components/form-field/form-field.component';
-
 const PageContainer = styled.div`
   ${tw`w-full bg-blue-800`}
-  height: 100vh;
+  height: 90vh;
 `;
 const ContentContainer = styled.div`
   ${tw`flex flex-wrap justify-center`}
@@ -34,7 +32,6 @@ const IndexPage: NextPage = () => {
   const filenameValueChange = (e: React.FormEvent<HTMLInputElement>) => {
     setFilename(e.currentTarget.value);
   };
-
   const saveQrCode = () => {
     const canvas = document.getElementById('qr_canvas') as HTMLCanvasElement;
     const url = canvas.toDataURL();
@@ -43,8 +40,9 @@ const IndexPage: NextPage = () => {
     link.href = url;
     link.click();
   };
+
   return (
-    <PageLayout title="QR Maker">
+    <PageLayout title="បង្កើត QR code">
       <PageContainer>
         <ContentContainer>
           {/* Form Content */}
@@ -52,13 +50,13 @@ const IndexPage: NextPage = () => {
             <CardContainer>
               <FormField
                 multiline={true}
-                label="Content"
+                label="ទិន្នន័យ"
                 name="content"
                 onChange={qrValueChange}
               />
               <FormField
                 multiline={true}
-                label="File Name"
+                label="ឈ្មោះ ឯកសារ"
                 name="filename"
                 onChange={filenameValueChange}
               />

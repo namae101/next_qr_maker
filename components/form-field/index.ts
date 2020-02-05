@@ -1,1 +1,1 @@
-export { default as Footer } from './form-field.component';
+export { default as FormField } from './form-field.component';

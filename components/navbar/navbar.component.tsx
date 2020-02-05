@@ -9,7 +9,7 @@ const TitleContainer = styled.div`
   ${tw`flex items-center flex-shrink-0 text-white mr-6`}
 `;
 const TitleSpan = styled.span`
-  ${tw`font-semibold text-xl tracking-tight select-none`}
+  ${tw`font-semibold text-2xl tracking-tight select-none`}
   &:hover {
     ${tw`cursor-default`}
   }
@@ -20,17 +20,17 @@ const ActionContainer = styled.div`
 `;
 
 const Action = styled.a`
-  ${tw`inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-0`}
+  ${tw`inline-block text-xl px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-0`}
 `;
 
 const Navbar: React.FunctionComponent = (): JSX.Element => (
   <header>
     <NavContainer>
       <TitleContainer>
-        <TitleSpan>QR Maker</TitleSpan>
+        <TitleSpan>ទិន្នន័យ</TitleSpan>
       </TitleContainer>
       <ActionContainer>
-        <Action href="#">About</Action>
+        <Action href="#">អំពី</Action>
       </ActionContainer>
     </NavContainer>
   </header>
