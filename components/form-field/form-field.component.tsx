@@ -24,7 +24,7 @@ const FormField: React.FunctionComponent<Props> = (
 ): JSX.Element => (
   <FormFieldContainer>
     <FormFieldLabel>{props.label}</FormFieldLabel>
-    <FormFieldInput type="text" id={props.name} onChange={props.onChange} />
+    <FormFieldInput type="text" onChange={props.onChange} name={props.name}/>
   </FormFieldContainer>
 );
 FormField.defaultProps = {

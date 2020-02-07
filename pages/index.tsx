@@ -5,8 +5,7 @@ import QRCode from 'qrcode.react';
 import styled from '@emotion/styled';
 import tw from 'tailwind.macro';
 const PageContainer = styled.div`
-  ${tw`w-full bg-blue-800`}
-  height: 90vh;
+  ${tw`w-full bg-blue-800 flex-auto`}
 `;
 const ContentContainer = styled.div`
   ${tw`flex flex-wrap justify-center`}

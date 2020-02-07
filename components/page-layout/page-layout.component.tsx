@@ -1,10 +1,15 @@
 import Head from 'next/head';
 import Navbar from '../navbar/navbar.component';
-
+import styled from '@emotion/styled';
+import tw from 'tailwind.macro';
 type Props = {
   title?: string;
 };
 
+const BodyContainer = styled.div`
+  ${tw`flex flex-col`};
+  height: 100vh;
+`;
 const Layout: React.FunctionComponent<Props> = ({
   children,
   title = 'NextJS Starter Project',
@@ -16,8 +21,10 @@ const Layout: React.FunctionComponent<Props> = ({
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <Navbar />
-      {children}
+      <BodyContainer>
+        <Navbar />
+        {children}
+      </BodyContainer>
     </>
   );
 };
