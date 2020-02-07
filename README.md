@@ -1,23 +1,6 @@
-# NextJS TypeScript Starter
+# QR Maker made with NextJS TypeScript Starter
 
 ## With Emotion, Tailwind, Storybook and Jest + Enzyme
 
-### What, and why...
-
-### TypeScript
-
-### NextJS
-
-### Emotion
-
-### Tailwind
-
-### Jest & Enzyme
-
-### Storybook
-
-### directory structure
-
-### code quality
-
-- prettier
+## Starter Url
+<https://github.com/lpbayliss/lpbayliss-nextjs-starter>
